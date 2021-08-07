@@ -1,0 +1,18 @@
+'''2. Define a class called Bike that accepts a string and a float as input, and assigns those inputs
+respectively to two instance variables, color and price. Assign to the variable testOne an instance of Bike
+whose color is blue and whose price is 89.99. Assign to the variable testTwo an instance of Bike whose
+color is purple and whose price is 25.0.'''
+class Bike:
+    def __init__(self,price,color):
+        self.color=color
+        self.price=price
+
+    def getinfo(self):
+        print("color = ",self.color)
+        print("price = ",self.price)
+
+test1=Bike(89.99,'Blue')
+test2=Bike(25.05,'Purple')
+
+test1.getinfo()
+test2.getinfo()
