@@ -1,0 +1,20 @@
+'''Write a Python class named Student with two instances student1, student2 and assign given values to
+the said instances attributes. Print all the attributes of student1, student2 instances with their values'''
+
+
+class Student:
+    def __init__(self, name, rollno, branch):
+        self.name = name
+        self.rollno = rollno
+        self.branch = branch
+        
+    def details(self):
+        print(self.name,end=" , ")
+        print(self.rollno,end=" , ")
+        print(self.branch)
+
+student1 = Student('James',12, 'ece')
+student2 = Student('Angie', 13, 'cse')
+
+student1.details()
+student2.details()
