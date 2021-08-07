@@ -1,0 +1,14 @@
+'''5.Create a class Point and initialize with the user defined values and write a method to calculate the
+distance of the point from the origin'''
+
+class Point:
+    def _init_(self,x,y):
+        self.x=x
+        self.y=y
+
+    def distance_from_origin(x,y):
+        temp=((x*2)+(y*2))
+        dist= math.sqrt(temp)
+        print("distance from origin=",dist)
+
+point1=Point.distance_from_origin(10,5)
